@@ -35,7 +35,7 @@ int main(int argc ,char *argv[]){
     puts("Recevied file data");
     //接收完成之后向服务端发送一个消息
     write(sock,"Thank you ",10);
-
+	//关闭socket套接字
     close(sock);
     return 0;
 }
